@@ -1,10 +1,8 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/jesonpro/ALEXA /root/ales
-WORKDIR /root/ales/
-RUN git clone https://github.com/tenuh/Config
-RUN git clone https://github.com/jesonpro/Angela-x
-ENV TZ=Europe/Istanbul
+RUN git clone https://github.com/xmain12/Stefanie-V-9.2-beta /root/WhatsAsenaDuplicated
+WORKDIR /root/WhatsAsenaDuplicated/
+ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
 RUN yarn install --no-audit
 
